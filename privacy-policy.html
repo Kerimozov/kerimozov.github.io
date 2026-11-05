@@ -9,11 +9,34 @@ body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padd
 h1 { font-size: 24px; }
 h2 { font-size: 18px; margin-top: 30px; }
 a { color: #1a73e8; }
+.lang-switch { margin-bottom: 24px; }
+.lang-switch button {
+  font-size: 14px;
+  padding: 6px 14px;
+  margin-right: 8px;
+  border: 1px solid #1a73e8;
+  background: #fff;
+  color: #1a73e8;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.lang-switch button.active {
+  background: #1a73e8;
+  color: #fff;
+}
+#zh { display: none; }
 </style>
 </head>
 <body>
+
+<div class="lang-switch">
+  <button id="btn-en" class="active" onclick="showLang('en')">English</button>
+  <button id="btn-zh" onclick="showLang('zh')">中文</button>
+</div>
+
+<div id="en">
 <h1>Privacy Policy</h1>
-<p>This privacy policy applies to the DoctorScan app for mobile devices, together with any related services operated by Reil Tech (collectively, the "Application"). Reil Tech is hereby referred to as the "Service Provider".</p>
+<p>This privacy policy applies to the DoctorScan app for mobile devices, together with any related services operated by Kerim OF (collectively, the "Application"). Kerim OF is hereby referred to as the "Service Provider" or "Developer".</p>
 
 <h2>Information Collection and Use</h2>
 <p>The Application collects information when you download and use it. This information may include information such as:</p>
@@ -80,8 +103,94 @@ a { color: #1a73e8; }
 <h2>Changes</h2>
 <p>The Service Provider may update this Privacy Policy from time to time. This privacy policy is effective as of 2026-08-14.</p>
 
-<h2>Contact Us</h2>
+<h2>Developer / Contact Us</h2>
+<p>Developer: Kerim OF</p>
 <p>If you have any questions regarding privacy while using the Application, please contact the Service Provider via email at krmof108@gmail.com.</p>
+</div>
+
+<div id="zh">
+<h1>隐私政策</h1>
+<p>本隐私政策适用于移动设备上的 DoctorScan 应用程序，以及由 Kerim OF（以下统称"本应用程序"）运营的任何相关服务。Kerim OF 在本政策中称为"服务提供者"或"开发者"。</p>
+
+<h2>信息收集与使用</h2>
+<p>本应用程序在您下载和使用时会收集信息，可能包括：</p>
+<ul>
+<li>您设备的互联网协议（IP）地址</li>
+<li>您访问的应用程序页面、访问的时间和日期，以及在这些页面上花费的时间</li>
+<li>您使用本应用程序的时长</li>
+<li>您使用的移动操作系统</li>
+</ul>
+
+<h2>Cookie 与跟踪技术</h2>
+<p>本应用程序或其第三方 SDK 可能使用 Cookie、SDK、像素标签及类似技术以支持功能、分析或服务交付。在适用法律要求的情况下，服务提供者将在使用非必要跟踪技术前获得您的同意。</p>
+
+<h2>您的权利</h2>
+<p>您可以要求访问、更正或删除服务提供者持有的您的个人数据。如需行使这些权利，或在处理基于同意的情况下撤回同意，请通过 krmof108@gmail.com 联系服务提供者。</p>
+
+<h2>加州隐私权利（CCPA/CPRA）</h2>
+<p>如果您是加利福尼亚州居民，您有权了解收集了哪些个人信息、删除个人信息、选择不出售或共享个人信息，以及因行使这些权利而不受歧视的权利。如需行使您的 CCPA/CPRA 权利，请通过 krmof108@gmail.com 联系服务提供者。</p>
+
+<p>服务提供者可能会使用您提供的信息发送重要信息、必要通知，以及在法律允许的情况下发送营销通讯。</p>
+
+<p>为了在使用本应用程序时获得更好的体验，服务提供者可能要求您提供某些个人身份信息，包括但不限于设备 ID、广告 ID。服务提供者所请求的信息将按照本隐私政策所述进行保留和使用。</p>
+
+<h2>第三方访问</h2>
+<p>只有经过汇总、匿名化处理的数据才会定期传输给外部服务，以协助服务提供者改进本应用程序及其服务。服务提供者可能会按照本隐私声明中描述的方式与第三方共享您的信息。</p>
+
+<h2>国际数据传输</h2>
+<p>服务提供者或其第三方服务提供商可能会将个人数据传输至您居住国以外的国家，包括欧洲经济区（EEA）以外的国家。在适用法律要求采取国际传输保障措施的情况下，服务提供者将采用适当的机制，包括：</p>
+<ul>
+<li>欧盟委员会批准的标准合同条款（SCCs）</li>
+<li>充分性认定或其他法律承认的传输机制</li>
+<li>在法律要求和允许的情况下，您的同意</li>
+</ul>
+
+<p>请注意，本应用程序使用的第三方服务拥有各自独立的数据处理隐私政策。以下是本应用程序所使用的第三方服务提供商的隐私政策链接：</p>
+<ul>
+<li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
+<li><a href="https://policies.google.com/technologies/partner-sites">AdMob</a></li>
+<li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a></li>
+</ul>
+
+<h2>选择退出权利</h2>
+<p>您可以通过卸载本应用程序来停止从您的移动设备收集进一步的信息。卸载将停止本应用程序从您的设备收集数据，但不会自动删除已经传输给服务提供者或第三方的信息。</p>
+
+<p>如需请求删除您的个人数据、撤回同意或行使您的任何权利，请通过 krmof108@gmail.com 联系服务提供者。</p>
+
+<h2>数据保留政策</h2>
+<ul>
+<li>用户提供的数据：在您使用本应用程序期间及之后保留 12 个月，除非法律要求更长的保留期限</li>
+<li>自动收集的数据：自收集之日起最多保留 24 个月，除非法律合规要求更长的保留期限</li>
+<li>汇总和匿名化数据：由于不再能识别您的身份，将无限期保留</li>
+<li>法律合规所需的数据：按照适用法律要求的期限保留</li>
+</ul>
+
+<h2>数据删除</h2>
+<p>您可以通过联系服务提供者（krmof108@gmail.com）请求删除您的个人数据或账户。服务提供者将在适用法律要求的期限内处理您的请求。</p>
+
+<h2>儿童隐私</h2>
+<p>本应用程序不面向 13 岁以下儿童，或适用法律要求的更高年龄限制以下的未成年人。服务提供者不会故意向儿童征集数据或向其推广本应用程序。</p>
+
+<h2>安全性</h2>
+<p>服务提供者重视保护您信息的机密性，并为其处理和维护的信息提供物理、电子和程序性保障措施。</p>
+
+<h2>变更</h2>
+<p>服务提供者可能会不时更新本隐私政策。本隐私政策自 2026 年 8 月 14 日起生效。</p>
+
+<h2>开发者 / 联系我们</h2>
+<p>开发者：Kerim OF</p>
+<p>如果您在使用本应用程序时对隐私问题有任何疑问，请通过电子邮件 krmof108@gmail.com 联系服务提供者。</p>
+</div>
+
+<script>
+function showLang(lang) {
+  document.getElementById('en').style.display = (lang === 'en') ? 'block' : 'none';
+  document.getElementById('zh').style.display = (lang === 'zh') ? 'block' : 'none';
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+  document.documentElement.lang = lang;
+}
+</script>
 
 </body>
 </html>
